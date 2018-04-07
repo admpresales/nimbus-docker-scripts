@@ -16,5 +16,4 @@ else
 	TAG="latest"
 fi
 
-
-docker run -d -p 8090:8080 -p 50000:50000 -p 9022:22 --name $NAME --hostname devops.aos.com --net demo-net admpresales/devops:$TAG
+docker run -d -p 8090:8080 -p 8091:80 -p 50000:50000 -p 9022:22 --name $NAME --hostname devops.aos.com --net demo-net admpresales/devops:$TAG
