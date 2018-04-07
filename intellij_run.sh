@@ -34,4 +34,7 @@ docker run -d --name $NAME \
 -v ${HOME}/.m2:/home/demo/.m2 \
 -v ${HOME}/${IDEA}:/home/demo/IdeaProjects \
 -e DISPLAY=unix$DISPLAY \
---net "host" -p 8824:8824 -p 5095:5095 admpresales/intellij:$TAG
+--net "host" \
+-p 8824:8824 \
+-p 5095:5095 \
+admpresales/intellij:$TAG
