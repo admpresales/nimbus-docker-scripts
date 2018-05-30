@@ -16,5 +16,7 @@ else
 fi
 
 ##To start the NV container:
-docker run -d -i --cap-add=NET_ADMIN --name $NAME --net=host --privileged -v /usr/src:/usr/src admpresales/nv:$TAG \
-/root/dockerentrypointfile.sh
+docker run -d -i --cap-add=NET_ADMIN --name $NAME \
+--net=host --privileged -v /usr/src:/usr/src \
+admpresales/nv:$TAG /root/dockerentrypointfile.sh
+
