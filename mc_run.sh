@@ -16,4 +16,4 @@ else
 fi
 
 ##To start the MC container:
-docker run -d --hostname mc.aos.com --name $NAME --net demo-net -p 8084:8084 --shm-size=2g admpresales/mc:$TAG
+docker run -d --hostname nimbusserver.aos.com --name $NAME --net demo-net -p 8084:8084 --shm-size=2g admpresales/mc:$TAG
