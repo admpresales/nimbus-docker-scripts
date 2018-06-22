@@ -22,4 +22,6 @@ docker run -d -p 8090:8080 \
 -p 9022:22 \
 --name $NAME \
 --hostname devops.aos.com \
---net demo-net admpresales/devops:$TAG
+--net demo-net \
+--add-host nimbussever:172.50.0.1 \
+admpresales/devops:$TAG
