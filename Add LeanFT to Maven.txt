@@ -1,3 +1,4 @@
+##### Linux #####
 /usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.common.jar -DgroupId=com.hp.lft -DartifactId=common -Dversion=14.2.0 -Dpackaging=jar
 /usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.report.jar -DgroupId=com.hp.lft -DartifactId=report -Dversion=14.2.0 -Dpackaging=jar
 /usr/bin/mvn install:install-file -Dfile=/opt/leanft/sdk/Java/com.hp.lft.reportbuilder-standalone.jar -DgroupId=com.hp.lft -DartifactId=reportbuilder -Dversion=14.2.0 -Dpackaging=jar
@@ -10,5 +11,22 @@
 /usr/bin/mvn install:install-file -Dfile=/opt/leanft/selenium-sdk/Java/com.hpe.lft.selenium-javadoc.jar -DgroupId=com.hpe.lft -DartifactId=selenium-sdk -Dversion=14.1.0 -Dpackaging=jar -Dclassifier=Javadoc
 
 
-####
+
+##### Mac #####
+cd /Applications/LeanFT/sdk/Java/
+
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Java/com.hp.lft.common.jar -DgroupId=com.hp.lft -DartifactId=common -Dversion=14.2.0 -Dpackaging=jar
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Java/com.hp.lft.report.jar -DgroupId=com.hp.lft -DartifactId=report -Dversion=14.2.0 -Dpackaging=jar
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Java/com.hp.lft.reportbuilder-standalone.jar -DgroupId=com.hp.lft -DartifactId=reportbuilder -Dversion=14.2.0 -Dpackaging=jar
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Java/com.hp.lft.sdk-javadoc.jar -DgroupId=com.hp.lft -DartifactId=sdk -Dclassifier=javadoc -Dversion=14.2.0 -Dpackaging=jar
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Java/com.hp.lft.sdk-standalone.jar -DgroupId=com.hp.lft -DartifactId=sdk -Dversion=14.2.0 -Dpackaging=jar
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Java/com.hp.lft.unittesting.jar -DgroupId=com.hp.lft -DartifactId=unittesting -Dversion=14.2.0 -Dpackaging=jar
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/sdk/Java/com.hp.lft.verifications.jar -DgroupId=com.hp.lft -DartifactId=verifications -Dversion=14.2.0 -Dpackaging=jar
+
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/Selenium\ SDK/Java/com.hpe.lft.selenium.jar -DgroupId=com.hpe.lft -DartifactId=selenium-sdk -Dversion=14.1.0 -Dpackaging=jar
+/Users/shahar/apache-maven-3.5.0/bin/mvn install:install-file -Dfile=/Applications/LeanFT/Selenium\ SDK/Java/com.hpe.lft.selenium-javadoc.jar -DgroupId=com.hpe.lft -DartifactId=selenium-sdk -Dversion=14.1.0 -Dpackaging=jar -Dclassifier=Javadoc
+####################
+
+
+#### MCUtilities #####
 /usr/bin/mvn install:install-file -Dfile=/home/demo/IdeaProjects/AOS_Web_LeanFT_Parellel/MCUtils/MCUtils.jar -DgroupId=com.mf -DartifactId=MCUtilities -Dversion=4.0.0 -Dpackaging=jar
