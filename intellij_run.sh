@@ -38,3 +38,4 @@ docker run -d --name $NAME \
 -p 8824:8824 \
 -p 5095:5095 \
 admpresales/intellij:$TAG
+
