@@ -17,18 +17,22 @@ if [ $OS_TYPE == "Darwin" ]; then
   echo "in Darwin land"
   SDK_PATH="/Applications/LeanFT/sdk/Java"
   SELENIUM_SDK_PATH="/Applications/LeanFT/Selenium\ SDK/Java"
-elif [$OS_TYPE == "Linux"]; then
-echo "in Linux zone"
+elif [ $OS_TYPE == "Linux" ]; then
+  echo "in Linux zone"
   SDK_PATH="/opt/leanft/sdk/Java"
   SELENIUM_SDK_PATH="/opt/leanft/selenium-sdk/Java"
+else
+  echo "This script can run on Mac or Linux. Exiting..."
+  exit
 fi
 
 echo "###### Debug #####"
 echo "LFT_VERSION: $LFT_VERSION"
 echo "MVN_PATH: $MVN_PATH"
-echo "OS_TYPE:$OS_TYPE:"
+echo "OS_TYPE:$OS_TYPE"
 echo "SDK_PATH: $SDK_PATH"
 echo "SELENIUM_SDK_PATH: $SELENIUM_SDK_PATH"
+
 
 ########################################
 $MVN_PATH install:install-file -Dfile=$SDK_PATH/com.hp.lft.common.jar -DgroupId=com.hp.lft -DartifactId=common -Dversion=$LFT_VERSION -Dpackaging=jar
