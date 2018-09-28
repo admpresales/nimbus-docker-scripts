@@ -13,4 +13,6 @@ docker run -t -i \
       -e "STORM_TENANT=159221713"  \
       -e "STORM_USERNAME=$NAME" \
       -e "STORM_PASSWORD=$PASSWORD" \
-      --net=host hpsoftware/stormrunner_load_generator
+      --net=host performancetesting/stormrunner_load_generator:latest
+
+
