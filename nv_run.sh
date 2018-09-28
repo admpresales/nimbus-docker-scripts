@@ -6,7 +6,7 @@ HOST_NAME=$(hostname)
 if [ "$1" != "" ]; then
 	NAME=$1
 else
-	NAME="mc"
+	NAME="nv"
 fi
 
 if [ "$2" != "" ]; then
@@ -17,6 +17,6 @@ fi
 
 ##To start the NV container:
 docker run -d -i --cap-add=NET_ADMIN --name $NAME \
---net=host --privileged -v /usr/src:/usr/src \
+-p 8182:8182 --net=host --privileged -v /usr/src:/usr/src \
 admpresales/nv:$TAG /root/dockerentrypointfile.sh
 
