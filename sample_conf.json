@@ -1,0 +1,15 @@
+{
+    "key": "ea818a2475e17603f3e6",
+    "interval": 20000,
+    "logLevel": "info",
+    "server": {
+        "protocol": "https:",
+        "addr": "stormrunner-load.saas.hpe.com",
+        "user": "shahar.shiff@hpe.com",
+        "password": "Dagnahash3#",
+        "tenant": "159221713"
+    },
+    "injector": {
+        "rootPath": "../injector_mdrv"
+    }
+}

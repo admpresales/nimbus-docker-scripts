@@ -1,18 +1,9 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
-    echo "Illegal number of parameters."
-    echo "Expecting <usre name> <password>"
-    exit
-fi
-
-NAME=$1
-PASSWORD=$2
-
 docker run -t -i \
       -e "STORM_TENANT=159221713"  \
-      -e "STORM_USERNAME=$NAME" \
-      -e "STORM_PASSWORD=$PASSWORD" \
+      -e "STORM_USERNAME=shahar.shiff@hpe.com" \
+      -e "STORM_PASSWORD=Dagnahash3#" \
       --net=host performancetesting/stormrunner_load_generator:latest
 
 
