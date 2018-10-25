@@ -16,7 +16,7 @@ fi
 
 # declare the project folder (as constant)
 #IDEA="IdeaProjects_docker"
-IDEA="Documents/github"
+IDEA="github"
 
 # if the folder doesn't exist, create it so it is owned by the user
 if [ ! -d "${HOME}/${IDEA}" ]
