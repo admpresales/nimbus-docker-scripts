@@ -21,7 +21,7 @@ docker ps --format "table {{.Names}}" | awk '{print $1}' | while read container;
     fi
     continue
     ;;
-    devops | octane | mc | alm | intellij | nv)
+    devops* | octane* | mc* | alm* | intellij* | nv*)
     stopContainer
     ;;
     NAMES)
@@ -34,7 +34,7 @@ docker ps --format "table {{.Names}}" | awk '{print $1}' | while read container;
     ;;
     *)
     echo "Unknown container '$container'"
-    break
+    continue
     ;;
   esac
 sleep 2
