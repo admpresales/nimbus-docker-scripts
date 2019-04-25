@@ -16,6 +16,5 @@ while (( "$#" )); do
   shift 1
 done
 
+# This will poll the container's status
 docker stats ${CONTAINERS}
-
-#/home/demo/SRF\ Tunnels/3.0/ftaas-tunnel -config /home/demo/SRF\ Tunnels/3.0/config/AMSPresalesWS.json
